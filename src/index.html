@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DWA project</title>
+  <title>DWA project | Vanilla</title>
   <link rel="stylesheet" type="text/css" href="/styles/app.css">
 </head>
-<body class="site">
-  <img src="/assets/images/logo-heaj.png">
-  <h1>Hello world!</h1>
+<body class="site" data-namespace="home">
+  <nav class="site__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item is-active">
+        <a class="nav__item__link" href="/">Home</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__item__link" href="#">Search</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__item__link" href="#">Watchlist</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="site__main">
+    <h1>Movie wishlist</h1>
+    <ul class="listing"></ul>
+  </main>
+  <footer class="site__footer footer">
+    <img class="footer__logo" src="/assets/images/logo-tmdb.svg">
+    <p class="footer__mention">This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
+  </footer>
   <script src="/scripts/app.js"></script>
 </body>
 </html>
