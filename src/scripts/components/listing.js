@@ -12,11 +12,16 @@ import createItem from 'components/item';
 // #3 default export
 export default function create ($list, items) {
   // Boucler sur les données
-  items.forEach(item => {
+  items.forEach((data, i) => {
     // Créer un élément
-    const $item = createItem(item);
+    // Notre 'item' est un objet avec :
+    // une propriété `$el` contenant l'élément list-item
+    // une méthode `show` permettant de l'afficher avec une transition
+    const item = createItem(data);
 
     // Ajouter à la liste
-    $list.appendChild($item);
+    $list.appendChild(item.$el);
+
+    item.show(i * 0.15);
   });
 }
