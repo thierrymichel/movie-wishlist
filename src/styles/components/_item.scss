@@ -28,3 +28,9 @@
   object-fit: cover;
   will-change: opacity;
 }
+
+.item__like {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}

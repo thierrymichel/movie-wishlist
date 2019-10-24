@@ -1,0 +1,32 @@
+// sass-lint:disable-all
+.like,
+[class*='like--'] {
+  border: 0;
+  padding: 0;
+  background: none;
+  fill: $c-white;
+  opacity: 0.65;
+  transition:
+    fill 0.25s ease-in-out,
+    opacity 0.25s ease-in-out;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    opacity: 1;
+  }
+
+  &.is-selected {
+    opacity: 1;
+    // fill: $c-gold;
+    fill: $c-pink;
+  }
+
+  svg {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: inherit;
+  }
+}
