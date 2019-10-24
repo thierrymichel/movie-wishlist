@@ -1,5 +1,5 @@
 // #3 default import
-import createItem from 'components/item';
+import Movie from 'components/Movie';
 
 /**
  * Create / update a list
@@ -17,7 +17,7 @@ export default function create ($list, items) {
     // Notre 'item' est un objet avec :
     // une propriété `$el` contenant l'élément list-item
     // une méthode `show` permettant de l'afficher avec une transition
-    const item = createItem(data);
+    const item = new Movie(data);
 
     // Ajouter à la liste
     $list.appendChild(item.$el);
