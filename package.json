@@ -38,6 +38,7 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
+    "animejs": "^3.1.0",
     "gsap": "^2.1.3"
   }
 }
